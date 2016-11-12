@@ -148,7 +148,7 @@ extension PhotosViewController: UICollectionViewDataSource {
       cell.imageView.image = photo.image
       cell.label.text = photo.title
       cell.layer.cornerRadius = 4.0
-      
+
     }
     return cell
   }
