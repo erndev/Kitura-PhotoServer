@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94CACB311DD7B6F000D1F233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CACB301DD7B6F000D1F233 /* AppDelegate.swift */; };
+		94CACB331DD7B6F000D1F233 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CACB321DD7B6F000D1F233 /* PhotosViewController.swift */; };
+		94CACB361DD7B6F000D1F233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CACB341DD7B6F000D1F233 /* Main.storyboard */; };
+		94CACB381DD7B6F000D1F233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94CACB371DD7B6F000D1F233 /* Assets.xcassets */; };
+		94CACB3B1DD7B6F000D1F233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CACB391DD7B6F000D1F233 /* LaunchScreen.storyboard */; };
+		94CACB441DD7B82A00D1F233 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CACB431DD7B82A00D1F233 /* NavigationViewController.swift */; };
+		94CACB461DD7B85800D1F233 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CACB451DD7B85800D1F233 /* AddPhotoViewController.swift */; };
+		94CACB481DD7BACD00D1F233 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CACB471DD7BACD00D1F233 /* Segue.swift */; };
+		94CACB4B1DD7C04900D1F233 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CACB4A1DD7C04900D1F233 /* SwiftyJSON.framework */; };
+		94CACB4E1DD7C08500D1F233 /* PhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CACB4D1DD7C08500D1F233 /* PhotoRepository.swift */; };
+		94CACB511DD7C0B100D1F233 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CACB501DD7C0B100D1F233 /* PhotoViewModel.swift */; };
+		94CACB541DD7C0EF00D1F233 /* KituraPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CACB531DD7C0EF00D1F233 /* KituraPhoto.swift */; };
+		94CACB561DD7C13300D1F233 /* KituraHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CACB551DD7C13300D1F233 /* KituraHTTPClient.swift */; };
+		94CACB581DD7C1EB00D1F233 /* KituraPhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CACB571DD7C1EB00D1F233 /* KituraPhotoRepository.swift */; };
+		94CACB5A1DD7C2B200D1F233 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 94CACB4A1DD7C04900D1F233 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94CACB5D1DD7C3C500D1F233 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CACB5C1DD7C3C500D1F233 /* CollectionViewCell.swift */; };
+		94CACB5F1DD7C64800D1F233 /* JSONHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CACB5E1DD7C64800D1F233 /* JSONHelpers.swift */; };
+		94CACB621DD7C74D00D1F233 /* UIImage+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CACB611DD7C74D00D1F233 /* UIImage+Base64.swift */; };
+		94CACB641DD7C8E300D1F233 /* Selector+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CACB631DD7C8E300D1F233 /* Selector+Actions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94CACB591DD7C2A600D1F233 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				94CACB5A1DD7C2B200D1F233 /* SwiftyJSON.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		94CACB2D1DD7B6F000D1F233 /* KituraClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KituraClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94CACB301DD7B6F000D1F233 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94CACB321DD7B6F000D1F233 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		94CACB351DD7B6F000D1F233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94CACB371DD7B6F000D1F233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94CACB3A1DD7B6F000D1F233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94CACB3C1DD7B6F000D1F233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94CACB431DD7B82A00D1F233 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		94CACB451DD7B85800D1F233 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
+		94CACB471DD7BACD00D1F233 /* Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		94CACB4A1DD7C04900D1F233 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = KituraClient/SwiftyJSON.framework; sourceTree = "<group>"; };
+		94CACB4D1DD7C08500D1F233 /* PhotoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoRepository.swift; sourceTree = "<group>"; };
+		94CACB501DD7C0B100D1F233 /* PhotoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		94CACB531DD7C0EF00D1F233 /* KituraPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KituraPhoto.swift; sourceTree = "<group>"; };
+		94CACB551DD7C13300D1F233 /* KituraHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KituraHTTPClient.swift; sourceTree = "<group>"; };
+		94CACB571DD7C1EB00D1F233 /* KituraPhotoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KituraPhotoRepository.swift; sourceTree = "<group>"; };
+		94CACB5C1DD7C3C500D1F233 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		94CACB5E1DD7C64800D1F233 /* JSONHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelpers.swift; sourceTree = "<group>"; };
+		94CACB611DD7C74D00D1F233 /* UIImage+Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Base64.swift"; sourceTree = "<group>"; };
+		94CACB631DD7C8E300D1F233 /* Selector+Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Selector+Actions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94CACB2A1DD7B6F000D1F233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94CACB4B1DD7C04900D1F233 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94CACB241DD7B6F000D1F233 = {
+			isa = PBXGroup;
+			children = (
+				94CACB2F1DD7B6F000D1F233 /* KituraClient */,
+				94CACB2E1DD7B6F000D1F233 /* Products */,
+				94CACB491DD7C04900D1F233 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		94CACB2E1DD7B6F000D1F233 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94CACB2D1DD7B6F000D1F233 /* KituraClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94CACB2F1DD7B6F000D1F233 /* KituraClient */ = {
+			isa = PBXGroup;
+			children = (
+				94CACB601DD7C73B00D1F233 /* Helpers */,
+				94CACB5B1DD7C3AE00D1F233 /* Cells */,
+				94CACB521DD7C0E400D1F233 /* Network */,
+				94CACB4F1DD7C0A600D1F233 /* Model */,
+				94CACB4C1DD7C07C00D1F233 /* Repository */,
+				94CACB421DD7B81500D1F233 /* View Controllers */,
+				94CACB301DD7B6F000D1F233 /* AppDelegate.swift */,
+				94CACB341DD7B6F000D1F233 /* Main.storyboard */,
+				94CACB371DD7B6F000D1F233 /* Assets.xcassets */,
+				94CACB391DD7B6F000D1F233 /* LaunchScreen.storyboard */,
+				94CACB3C1DD7B6F000D1F233 /* Info.plist */,
+			);
+			path = KituraClient;
+			sourceTree = "<group>";
+		};
+		94CACB421DD7B81500D1F233 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				94CACB451DD7B85800D1F233 /* AddPhotoViewController.swift */,
+				94CACB321DD7B6F000D1F233 /* PhotosViewController.swift */,
+				94CACB431DD7B82A00D1F233 /* NavigationViewController.swift */,
+				94CACB471DD7BACD00D1F233 /* Segue.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		94CACB491DD7C04900D1F233 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94CACB4A1DD7C04900D1F233 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94CACB4C1DD7C07C00D1F233 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				94CACB4D1DD7C08500D1F233 /* PhotoRepository.swift */,
+				94CACB571DD7C1EB00D1F233 /* KituraPhotoRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		94CACB4F1DD7C0A600D1F233 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94CACB501DD7C0B100D1F233 /* PhotoViewModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		94CACB521DD7C0E400D1F233 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				94CACB531DD7C0EF00D1F233 /* KituraPhoto.swift */,
+				94CACB551DD7C13300D1F233 /* KituraHTTPClient.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		94CACB5B1DD7C3AE00D1F233 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				94CACB5C1DD7C3C500D1F233 /* CollectionViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		94CACB601DD7C73B00D1F233 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				94CACB611DD7C74D00D1F233 /* UIImage+Base64.swift */,
+				94CACB5E1DD7C64800D1F233 /* JSONHelpers.swift */,
+				94CACB631DD7C8E300D1F233 /* Selector+Actions.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94CACB2C1DD7B6F000D1F233 /* KituraClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94CACB3F1DD7B6F000D1F233 /* Build configuration list for PBXNativeTarget "KituraClient" */;
+			buildPhases = (
+				94CACB291DD7B6F000D1F233 /* Sources */,
+				94CACB2A1DD7B6F000D1F233 /* Frameworks */,
+				94CACB2B1DD7B6F000D1F233 /* Resources */,
+				94CACB591DD7C2A600D1F233 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KituraClient;
+			productName = KituraClient;
+			productReference = 94CACB2D1DD7B6F000D1F233 /* KituraClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94CACB251DD7B6F000D1F233 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = erndev;
+				TargetAttributes = {
+					94CACB2C1DD7B6F000D1F233 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 94CACB281DD7B6F000D1F233 /* Build configuration list for PBXProject "KituraClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94CACB241DD7B6F000D1F233;
+			productRefGroup = 94CACB2E1DD7B6F000D1F233 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94CACB2C1DD7B6F000D1F233 /* KituraClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94CACB2B1DD7B6F000D1F233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94CACB3B1DD7B6F000D1F233 /* LaunchScreen.storyboard in Resources */,
+				94CACB381DD7B6F000D1F233 /* Assets.xcassets in Resources */,
+				94CACB361DD7B6F000D1F233 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94CACB291DD7B6F000D1F233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94CACB581DD7C1EB00D1F233 /* KituraPhotoRepository.swift in Sources */,
+				94CACB5F1DD7C64800D1F233 /* JSONHelpers.swift in Sources */,
+				94CACB541DD7C0EF00D1F233 /* KituraPhoto.swift in Sources */,
+				94CACB441DD7B82A00D1F233 /* NavigationViewController.swift in Sources */,
+				94CACB4E1DD7C08500D1F233 /* PhotoRepository.swift in Sources */,
+				94CACB511DD7C0B100D1F233 /* PhotoViewModel.swift in Sources */,
+				94CACB461DD7B85800D1F233 /* AddPhotoViewController.swift in Sources */,
+				94CACB561DD7C13300D1F233 /* KituraHTTPClient.swift in Sources */,
+				94CACB641DD7C8E300D1F233 /* Selector+Actions.swift in Sources */,
+				94CACB331DD7B6F000D1F233 /* PhotosViewController.swift in Sources */,
+				94CACB621DD7C74D00D1F233 /* UIImage+Base64.swift in Sources */,
+				94CACB481DD7BACD00D1F233 /* Segue.swift in Sources */,
+				94CACB311DD7B6F000D1F233 /* AppDelegate.swift in Sources */,
+				94CACB5D1DD7C3C500D1F233 /* CollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		94CACB341DD7B6F000D1F233 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94CACB351DD7B6F000D1F233 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94CACB391DD7B6F000D1F233 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94CACB3A1DD7B6F000D1F233 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94CACB3D1DD7B6F000D1F233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94CACB3E1DD7B6F000D1F233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94CACB401DD7B6F000D1F233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KituraClient",
+				);
+				INFOPLIST_FILE = KituraClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erndev.KituraClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		94CACB411DD7B6F000D1F233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KituraClient",
+				);
+				INFOPLIST_FILE = KituraClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erndev.KituraClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94CACB281DD7B6F000D1F233 /* Build configuration list for PBXProject "KituraClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94CACB3D1DD7B6F000D1F233 /* Debug */,
+				94CACB3E1DD7B6F000D1F233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94CACB3F1DD7B6F000D1F233 /* Build configuration list for PBXNativeTarget "KituraClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94CACB401DD7B6F000D1F233 /* Debug */,
+				94CACB411DD7B6F000D1F233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94CACB251DD7B6F000D1F233 /* Project object */;
+}
