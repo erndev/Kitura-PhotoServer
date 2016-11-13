@@ -129,7 +129,9 @@ extension PhotosViewController {
         if let photo = photo {
           let last = self.photos.count
           self.photos.append(photo)
-          self.collectionView?.insertItems(at: [ IndexPath(row:last, section:0)])
+          let indexPath = IndexPath(row:last, section:0)
+          self.collectionView?.insertItems(at: [indexPath] )
+          self.collectionView.scrollToItem(at: indexPath, at: .bottom, animated: true)
         }
       }
     })
